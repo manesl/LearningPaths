@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <title> Learning Paths </title>
+    <head>
+        <link href="static/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="intro">
+            <h1 style="font-weight: 2000; text-align: center; color: rgb(30, 30, 32);">Welcome to Learning Paths!<br></h1>
+            <p style="color: rgb(63, 62, 62); font-size: 100; font-weight: 1000;">Want to learn a technology from scratch?<br> 
+                Don't know where to start?<br>
+                We got you all sorted!</p></p>
+            </div>
+            <h3>Sign-in to the website </h3>
+            <form action="{{ url_for('course')}}" method="POST">
+                <input title="Enter your email address" placeholder="Enter your email address" type="email" name="email_name" required><br>
+                <input style="margin-bottom: 20px;" title="Enter your password" placeholder="Enter your password" type="password" name="password" required><br>
+                <button type="submit">Submit</button>
+                <a href="{{ url_for('login')}}" style="color: rgb(92, 89, 89);">Already a user?</a>
+            </form>
+        </div>
+    </body>
+</html>
