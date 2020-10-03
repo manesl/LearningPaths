@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en' style="background: url(../static/img/mc1.jpg) center no-repeat; background-size: cover;"></html>>
+<html lang='en' style="background: url(../static/img/mc1.jpg) center no-repeat; background-size: cover;"></html>
     <title>Choose</title>
     <head>
         <link href="../static/main.css" rel="stylesheet">
@@ -11,7 +11,11 @@
                 <h3 style="text-align:center; color: white; font-weight: 500;font-size: x-large; width: 33.33%;">
                     Beginner<br>&#8595
                 </h3>
-                    <form><!--action="input.html"-->
+                <form action="{{ url_for('mc_learning_path_1')}}" method="POST">
+                <!--these buttons don't have anything when they are clicked -->
+                <!--only learning path 1 is clickable so that it take you to that mc_learning_path_1.html page -->
+                <!--jauhar needs to work on that html page elements and app.py-->
+                <!--adding action for learning path 1 page which is post-->
                     <button style="height: 33.33%;"> Learning Path 1</button>
                     <button style="height: 33.33%;"> Learning Path 2</button>
                     <button style="height: 33.33%;"> Learning Path 3</button>
@@ -27,7 +31,7 @@
                         <button style="height: 33.33%;"> Learning Path 3</button>
                 </form>
             </div>
-            <div class="row2" style="float: left;">>
+            <div class="row2" style="float: left;">
                 <h5 style="text-align: center; color: white;font-size: x-large; font-weight: 500; width: 33.33%;">
                     Advanced<br>&#8595
                 </h5>
